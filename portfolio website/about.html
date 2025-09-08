@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Portfolio website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: whitesmoke;
+      color: beige;
+      font-family: "Raleway", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 100px;
+      background-color: rgb(60, 48, 48);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      list-style-type: none;
+      margin: 0 33px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: beige;
+    }
+
+    nav ul li a:hover {
+      color: violet;
+      font-size: 1.2rem;
+    }
+
+    .left {
+      font-size: 2rem;
+    }
+
+    .first {
+      display: flex;
+      justify-content: space-between;
+      /* text left, image right */
+      align-items: center;
+      margin: 5vh 3vw;
+    }
+
+    .leftSection {
+      width: 50%;
+      font-size: 2.65rem;
+      color: black;
+
+      /* Animation from left */
+      opacity: 0;
+      transform: translateX(-100px);
+      animation: slideIn 1.5s ease forwards;
+    }
+
+    @keyframes slideIn {
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .rightSection img {
+      width: 600px;
+      /* Fixed size */
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="left">
+        <h1>Nikhil's Portfolio</h1>
+      </div>
+      <div class="right"></div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="first">
+      <div class="leftSection">
+        <p>
+          Hi, I’m <b style="color: purple;">Nikhil Prakash Patil</b>, a passionate Web Developer and Designer from India. I
+          love building modern, responsive
+          websites and creating smooth user experiences.
+          When I’m not coding, I enjoy writing rap songs , watching football matches, playing cricket, editing videos, and exploring AI tools. My goal is to become a
+          full-stack developer and contribute to impactful projects.
+        </p>
+      </div>
+      <div class="rightSection">
+        <img src="background.jpg" alt="Portfolio Image">
+      </div>
+    </section>
+  </main>
+
+</body>
+
+</html>
